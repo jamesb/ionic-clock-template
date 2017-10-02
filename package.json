@@ -1,0 +1,12 @@
+{
+  "fitbit": {
+    "appUUID": "b3a62185-6d9b-4980-82ca-5afc0559631d",
+    "appType": "clockface",
+    "appDisplayName": "Digital Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ]
+  }
+}

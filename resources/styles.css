@@ -1,0 +1,31 @@
+.background {
+  viewport-fill: #33A2FF;
+}
+
+text {
+  font-family: Colfax-Medium;
+  fill: white;
+}
+
+#lblTime {
+  font-size: 80;
+  text-length: 32;
+  text-anchor: end;
+}
+
+#lblAmPm {
+  font-size: 40;
+  text-length: 32;
+  text-anchor: start;
+}
+
+#imgBpm {
+  fill: #FF534C;
+  opacity: 1;
+}
+
+#lblBpm {
+  font-size: 40;
+  text-length: 4;
+  text-anchor: start;
+}

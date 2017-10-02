@@ -1,0 +1,6 @@
+<svg class="background">
+  <text id="lblTime" x="68%" y="50%+40"/>
+  <text id="lblAmPm" x="70%" y="50%+40"/>
+  <image id="imgBpm" x="60%" y="5%" width="38" height="34"/>
+  <text id="lblBpm" x="60%+50" y="5%+30"/>
+</svg>
