@@ -1,7 +1,6 @@
-let document = require("document");
 import { HeartRateSensor } from "heart-rate";
 
-export function hr_init(update_func) {
+function hr_init(update_func) {
   console.log("HR sensor starting...");
 
   // Create a new instance of the HeartRateSensor object
@@ -15,7 +14,9 @@ export function hr_init(update_func) {
   return sens_hr;
 }
 
-export function hr_destroy(sens_hr) {
+function hr_destroy(sens_hr) {
   sens_hr.stop();
   console.log("HR sensor stopped.");
 }
+
+export {hr_init, hr_destroy};

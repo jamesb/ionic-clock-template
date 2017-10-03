@@ -1,6 +1,20 @@
 <svg class="background">
-  <text id="lblTime" x="68%" y="50%+40"/>
-  <text id="lblAmPm" x="70%" y="50%+40"/>
-  <image id="imgBpm" x="60%" y="5%" width="38" height="34"/>
-  <text id="lblBpm" x="60%+50" y="5%+30"/>
+  <circle id="memoryPressure" cx="0" cy="0" r="0" fill="#FFFFFF"/>
+
+  <svg x="68%" y="50%+40">
+    <text id="lblTime" x="0%" y="0"/>
+    <text id="lblAmPm" x="2%" y="0"/>
+  
+    <animate attributeName="x" begin="click"     to="-30%" dur="0.5" easing="ease-in-out" final="keep"/>
+    <animate attributeName="x" begin="click+0.5" to="68%"  dur="0.5" easing="ease-in-out" final="keep"/>
+  </svg>
+  
+  <svg x="60%" y="5%">
+    <image id="imgBpm" x="0" y="0" width="38" height="34"></image>
+    <text id="lblBpm" x="50" y="30"/>
+
+    <animate attributeName="y" begin="click"     to="-20%" dur="0.5" easing="ease-in-out" final="keep"/>
+    <animate attributeName="y" begin="click+0.5" to="5%"   dur="0.5" easing="ease-in-out" final="keep"/>
+  </svg>
+
 </svg>

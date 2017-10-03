@@ -3,13 +3,15 @@ import document from "document";
 import { display } from "display";
 import { preferences } from "user-settings";
 
+import { hr_init } from "../common/hr_sensor";
+import * as memory from "../common/memory";
 import * as util from "../common/utils";
-import {hr_init} from "./hr_sensor";
 
 var DEBUG = false;
 
 // Keep the screen on
 if (DEBUG) { display.autoOff = false;  display.on = true; }
+if (DEBUG) { memory.memoryPressure_init();  memory.updateMemoryMonitor() }
 
 // Update the clock every minute
 clock.granularity = "minutes";
